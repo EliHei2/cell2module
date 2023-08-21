@@ -8,7 +8,7 @@ from cell2location.models.base._pyro_mixin import (
     PltExportMixin,
     PyroAggressiveConvergence,
     PyroAggressiveTrainingPlan,
-    PyroTrainingPlan,
+    # PyroTrainingPlan,
     QuantileMixin,
 )
 from pyro import clear_param_store
@@ -25,7 +25,7 @@ from scvi.data.fields import (
 from scvi.dataloaders import DataSplitter, DeviceBackedDataSplitter
 from scvi.model.base import BaseModelClass, PyroSampleMixin, PyroSviTrainMixin
 from scvi.model.base._pyromixin import PyroJitGuideWarmup
-from scvi.train import TrainRunner
+from scvi.train import TrainRunner, PyroTrainingPlan
 from scvi.utils import setup_anndata_dsp
 
 from cell2module.models._base_module import (
