@@ -285,7 +285,7 @@ class Cell2ModuleModel(
                 train_size=train_size,
                 validation_size=validation_size,
                 batch_size=batch_size,
-                use_gpu=use_gpu,
+                # use_gpu=use_gpu,
             )
         else:
             data_splitter = DataSplitter(
@@ -293,7 +293,7 @@ class Cell2ModuleModel(
                 train_size=train_size,
                 validation_size=validation_size,
                 batch_size=batch_size,
-                use_gpu=use_gpu,
+                # use_gpu=use_gpu,
             )
         if use_aggressive_training:
             aggressive_vars = list(self.module.list_obs_plate_vars["sites"].keys()) + ["cell_modules_w_cf_weight"]
